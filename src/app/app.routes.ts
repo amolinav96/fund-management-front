@@ -18,7 +18,7 @@ export const routes: Routes = [
         component: FormCancellationComponent
     },
     {
-        path: 'user',
+        path: '',
         component: UserDetailComponent
     }
 ];
