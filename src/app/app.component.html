@@ -1,4 +1,7 @@
-<h1>Fund Management AMV</h1>
-<app-form-transaction></app-form-transaction>
-<app-table-transaction></app-table-transaction>
+<h1>Gestion de fondos BTG Pactual</h1>
+<nav class="d-flex justify-content-center">
+    <a class="btn btn-primary me-2" [routerLink]="['/transaction']">Información del usuario</a>
+    <a class="btn btn-primary me-2" [routerLink]="['/transaction']">Realizar transacción</a> 
+    <a class="btn btn-primary" [routerLink]="['/transactions']">Lista de transacciones</a> 
+</nav>
 <router-outlet />
