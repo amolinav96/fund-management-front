@@ -2,10 +2,11 @@ import { Routes } from '@angular/router';
 import { FormTransactionComponent } from './form-transaction/form-transaction.component';
 import { TableTransactionComponent } from './table-transaction/table-transaction.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
+import { FormCancellationComponent } from './form-cancellation/form-cancellation.component';
 
 export const routes: Routes = [
     {
-        path: 'transaction',
+        path: 'opening',
         component: FormTransactionComponent
     },
     {
@@ -13,8 +14,8 @@ export const routes: Routes = [
         component: TableTransactionComponent
     },
     {
-        path: 'funds',
-        component: TableTransactionComponent
+        path: 'cancellation',
+        component: FormCancellationComponent
     },
     {
         path: 'user',

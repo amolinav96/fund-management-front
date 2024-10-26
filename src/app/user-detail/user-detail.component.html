@@ -10,17 +10,13 @@
             <div class="row">
               <!-- Información del usuario -->
               <div class="col-md-11">
-                <h5 class="card-title">{{userModel.fullName}}</h5>
-                <p class="card-text"><strong>ID:</strong> {{userModel.id}}</p>
-                <p class="card-text"><strong>Email:</strong> {{userModel.email}}</p>
-                <p class="card-text"><strong>Tipo de documento:</strong> {{userModel.identificationType}}</p>
-                <p class="card-text"><strong>Numero de documento:</strong> {{userModel.identificationNumber}}</p>
-                <p class="card-text"><strong>Saldo disponible:</strong> {{userModel.availableBalance}}</p>
+                <h5 class="card-title">{{userModel?.fullName}}</h5>
+                <p class="card-text"><strong>ID:</strong> {{userModel?.id}}</p>
+                <p class="card-text"><strong>Email:</strong> {{userModel?.email}}</p>
+                <p class="card-text"><strong>Tipo de documento:</strong> {{userModel?.identificationType}}</p>
+                <p class="card-text"><strong>Numero de documento:</strong> {{userModel?.identificationNumber}}</p>
+                <p class="card-text"><strong>Saldo disponible:</strong> {{userModel?.availableBalance}}</p>
               </div>
-            </div>
-            <!-- Botones de acción -->
-            <div class="mt-4 text-right">
-              <a href="/users" class="btn btn-secondary">Volver a la Lista</a>
             </div>
           </div>
         </div>
@@ -30,9 +26,9 @@
       <div class="col-md-7">
         <div class="card shadow-lg mb-4">
           <div class="card-header bg-secondary text-white">
-            <h4 class="mb-0">Lista de Transacciones</h4>
+            <h4 class="mb-0">Mis suscripciones</h4>
           </div>
-          <app-table-transaction></app-table-transaction>
+          <app-table-subscription></app-table-subscription>
         </div>
       </div>
     </div>

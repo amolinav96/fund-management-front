@@ -2,40 +2,19 @@
     <thead>
       <tr>
         <th scope="col">ID</th>
-        <th scope="col">SuscripcionID</th>
-        <th scope="col">UserID</th>
+        <th scope="col">SuscripciónID</th>
         <th scope="col">Tipo</th>
         <th scope="col">Fecha</th>
       </tr>
     </thead>
     <tbody>
+      @for (transaction of listTransaction; track $index) {
       <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>mdo</td>
-        <td>mdo</td>
+        <td>{{ transaction.id }}</td>
+        <td>{{ transaction.subscriptionId }}</td>
+        <td>{{ transaction.transactionType == "OPENING" ? "APERTURA" : "CANCELACION" }} </td>
+        <td>{{ transaction.date }}</td>
       </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>fat</td>
-        <td>mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Thornton</td>
-        <td>twitter</td>
-        <td>Thornton</td>
-        <td>mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">4</th>
-        <td>Thornton</td>
-        <td>twitter</td>
-        <td>Thornton</td>
-        <td>mdo</td>
-      </tr>
+    }
     </tbody>
   </table>
